@@ -314,8 +314,10 @@ border:1px solid var(--divider-bg);
 margin-right:1rem;margin-bottom:1rem}
 
 
+.testimonials-card p{display: inline}
+
 .testimonials-card img{float: right;
-display: inline-block;
+
 width:30%;
 }
 
