@@ -364,7 +364,7 @@ border-top:1px solid var(--divider-bg)}
 
 /* ===== MEDIA QUERY FOR 480px ===== */
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 510px) {
 
 #nav{position:fixed;top:56px;left:-100%;
 width:70%;background:var(--header-bg);
