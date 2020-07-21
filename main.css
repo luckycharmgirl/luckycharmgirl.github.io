@@ -374,7 +374,8 @@ transition:0.5s}
 
 #list-nav .nav-link{width:100%; text-align:center;
 background:var(--header-bg);
-border-bottom:1px solid var(--divider-bg)}
+border-bottom:1px solid var(--divider-bg);
+padding:0}
 
 #nav-btn{display:block;z-index:52}
 
