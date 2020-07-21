@@ -40,7 +40,10 @@ snackbar.className=snackbar.className.replace("show", "")}, 3000)
 const mySiema1=new Siema({
 selector: '.siema1', loop: true, duration: 200, perPage: { 200:1, 480: 2, 900: 3 } 
 })
+
+/*
 setInterval(()=> mySiema1.next(), 4000)
+*/
 
 
 
