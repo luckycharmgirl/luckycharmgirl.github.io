@@ -5,7 +5,7 @@
 --header-bg:#fafafa;  --header-text:#222;
 --header-hover-bg:#1a237e;
 --header-hover-text:#fff;
---link-bg:#ace;  --link-text:#0f7c90;
+--link-bg:#ace;  --link-text:#C53030;
 --link-hover-text:#094c59;
 --btn-bg:#C53030;  --btn-text:#fff;
 --btn2-bg:#ccc;  --btn2-text:#111;
@@ -64,7 +64,9 @@ animation:fout 1s ease-out}
 @-webkit-keyframes fout{ from{opacity:0} to{opacity:1} }
 @keyframes fout{ from{opacity:0} to{opacity:1} }
 
-a {background-color:transparent}
+a {background-color:transparent;
+color:var(--link-text);
+text-decoration: underline dotted}
 
 hr {display:block; height:1px; border:0;
 padding:0; margin:2rem 0;
@@ -318,6 +320,26 @@ box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25)
 
 .blogs p{max-width:800px;
 display: inline-block}
+
+.blogs .blog-post{overflow: hidden;
+border:1px solid var(--divider-bg);
+border-radius:4px; text-align:left}
+
+.blogs .blog-post p{margin:0.5rem;
+display: inline-block;
+font-weight:bold}
+
+.blogs .blog-post p span{color: var(--main-text);
+font-weight:normal; display: inline-block;
+}
+
+.blogs .fa-arrow-circle-right{color:var(--btn-bg);
+animation:swipe 1s infinite ease}
+
+@keyframes swipe{
+0%{padding-left:1rem; padding-right:0 }
+30%{padding-left:0; padding-right:1rem} 
+100%{padding-left:1rem; padding-right:0 } }
 
 
 /* ===== TESTIMONIALS ===== */
