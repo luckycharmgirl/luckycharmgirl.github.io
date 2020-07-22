@@ -280,15 +280,15 @@ backface-visibility: hidden}
 
 .services{text-align:center;}
 
-.services p{max-width:800px;
-display: inline-block}
+.services p{max-width:800px;display:inline-block}
 
 .services-card{border:1px solid var(--divider-bg);
 background:#fff; border-radius:4px;
  padding:1rem;margin-bottom:1rem}
 
-.services-card img{width:25%}
-
+.services-card img{width:25%;
+float: left;}
+.services-card p{display: inline}
 
 
 /* ===== PREVIEW-GALLERY ===== */
@@ -310,7 +310,8 @@ column-gap:5px}
 display: inline-block}
 
 .video-div { position: relative; width: 100%; overflow: hidden; padding-top: 56.25%;
-box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25)
+box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
+margin-bottom:1rem
 }
 
 .video-iframe{ position: absolute; top: 0; left: 0; bottom: 0; right: 0; width: 100%; height: 100%; border:0;}
@@ -322,6 +323,7 @@ box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25)
 display: inline-block}
 
 .blogs .blog-post{overflow: hidden;
+margin-bottom:1rem;
 border:1px solid var(--divider-bg);
 border-radius:4px; text-align:left}
 
