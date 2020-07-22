@@ -335,13 +335,6 @@ font-weight:bold}
 font-weight:normal; display: inline-block;
 }
 
-.blogs .fa-arrow-circle-right{color:var(--btn-bg);
-animation:swipe 1s infinite ease}
-
-@keyframes swipe{
-0%{padding-left:1rem; padding-right:0 }
-30%{padding-left:0; padding-right:1rem} 
-100%{padding-left:1rem; padding-right:0 } }
 
 
 /* ===== TESTIMONIALS ===== */
@@ -359,6 +352,57 @@ margin-right:1rem;margin-bottom:1rem;
 
 .testimonials-card .star-rated{display:block;
 font-size:2rem; margin-top:0.5rem}
+
+
+
+/* ===== CONTACT ===== */
+
+.contact p span{display:block;font-weight:bold}
+
+.contact .indent{margin-left:1rem}
+
+input[type="text"], input[type="email"], input[type="password"], textarea{
+box-sizing:border-box; outline:0;
+width:100%;resize:vertical;border-radius:4px;
+border: 1px solid var(--main-text);
+padding:0.5rem;
+font-size:inherit;font-family:inherit;
+background:#EDF2F7;
+}
+
+
+input:focus, textarea:focus {
+border-color:var(--link-text);border-width:2px}
+
+.form-input {margin:-2px 0 10px 0; }
+
+.form-textarea {margin:-1px 0;height:100px}
+
+
+
+
+form .btn{width: 100%; }
+
+
+input, button, select, textarea{line-height:inherit;
+font-family:inherit; font-size:inherit;}
+
+
+
+
+
+.consent{font-size:1.5rem;
+display: block;
+}
+
+
+input[type="radio"], input[type="checkbox"] {
+display:inline-block;min-height:2rem;
+min-width:2rem;vertical-align:-20%}
+
+
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus, textarea:-webkit-autofill, textarea:-webkit-autofill:hover, textarea:-webkit-autofill:focus, select:-webkit-autofill, select:-webkit-autofill:hover, select:-webkit-autofill:focus{-webkit-box-shadow: 0 0 0px 1000px #EDF2F7 inset}
+
 
 
 
