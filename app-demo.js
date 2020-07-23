@@ -117,6 +117,63 @@ options: {
 
 
 
+
+
+
+
+
+
+
+function initMap(){
+  var options = { zoom:10,
+  center:{lat:26.8711,lng:80.9409} }
+
+  var map = new google.maps.Map(document.getElementById('map'), options)
+
+  google.maps.event.addListener(map, 'click', function(event){
+ addMarker({coords:event.latLng})
+  })
+
+  var markers = [
+{ coords:{lat:26.8711,lng:80.9409},
+  iconImage:'https://developers.google.com/maps/documentation/javascript/examples/full/images/beachflag.png',
+  content:'<h2>RexArvind</h2>' },
+
+{ coords:{lat:26.8664,lng:80.9650},
+  content:'<h2>RexArvind Web Services</h2>' },
+
+{ coords:{lat:26.8654,lng:80.9750} }
+]
+
+  for(var i = 0;i < markers.length;i++){
+    addMarker(markers[i]) }
+
+  function addMarker(props){
+  var marker = new google.maps.Marker({
+    position:props.coords,
+    map:map })
+
+  if(props.iconImage){
+    marker.setIcon(props.iconImage) }
+
+  if(props.content){
+    var infoWindow = new google.maps.InfoWindow({
+  content:props.content })
+
+  marker.addListener('click', function(){
+            infoWindow.open(map, marker) })
+        }
+      }
+    }
+
+
+
+
+
+
+
+
+
 fetch('https://corona.lmao.ninja/v2/countries/India') .then((response) => { return response.json(); }) .then((data) => { console.log(data); document.getElementById("country").innerHTML = data.country; document.getElementById("active").innerHTML = data.active.toLocaleString(); document.getElementById("cases").innerHTML = data.cases.toLocaleString(); document.getElementById("critical").innerHTML = data.critical.toLocaleString(); document.getElementById("death").innerHTML = data.deaths.toLocaleString(); document.getElementById("recovered").innerHTML = data.recovered.toLocaleString(); document.getElementById("tests").innerHTML = data.tests.toLocaleString(); document.getElementById("flag").src = data.countryInfo.flag; });
 
 

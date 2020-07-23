@@ -146,20 +146,7 @@ Lucky Charm Girl <span>Art &amp; Design Studio</span>
 
 <div class="section group">
 <div class="col span_6_of_12">
-<pre><code>  //  This is Code Block
 
-  function goodNight(name){
-    if(typeof(name)==="string"){
-      var today=new Date(), message="",
-          forever=today.getFullYear();
-      for(var i=0;i<=forever;i++)
-         message+="I Love YOU "+name+"\n";
-       console.log(message);
-      } else console.log("Good Night");
-  }
-
-  goodNight("Gorgeous");
-</code></pre>
 </div>
 
 <div class="col span_6_of_12">
@@ -241,7 +228,28 @@ CORS, aka Cross-Origin Resource Sharing, is a mechanism that enables many resour
 <hr>
 
 
+<div class="section group">
+<div class="col span_6_of_12">
+<pre><code>  //  This is Code Block
 
+  function goodNight(name){
+    if(typeof(name)==="string"){
+      var today=new Date(), message="",
+          forever=today.getFullYear();
+      for(var i=0;i<=forever;i++)
+         message+="I Love YOU "+name+"\n";
+       console.log(message);
+      } else console.log("Good Night");
+  }
+
+  goodNight("Gorgeous");
+</code></pre>
+</div>
+
+<div class="col span_6_of_12">
+    <div id="map"></div>
+</div>
+</div>
 
 
 
@@ -258,6 +266,16 @@ Copyright <span id="footer-year"></span> &copy; Lucky Charm Girl<br>
 <script src="lib/siema.js"></script>
 <script src="lib/highlight.pack.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPX6HSBF2KHk2zFvcleRn-AfpCukHPj6c&callback=initMap">
+</script>
+      
+
+
+
+
+
 
 <script src="app-demo.js"></script>
 </body></html>
