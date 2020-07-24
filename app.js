@@ -86,6 +86,10 @@ imgs.innerHTML="<img src=https://dummyimage.com/hd720/" + images[x - 1] + ">";}
 
 
 
+if('serviceWorker' in navigator){
+  navigator.serviceWorker.register('/sw.js')
+    .then(reg => console.log('service worker registered'))
+    .catch(err => console.log('service worker not registered', err)) }
 
 
 

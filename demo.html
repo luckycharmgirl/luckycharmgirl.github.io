@@ -3,7 +3,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>Lucky Charm Girl Art Studio</title>
+<title>Lucky Charm Girl Studio</title>
 
 <meta property="article:author" content="Lucky Charm Girl Art Studio" />
 <meta name="author" content="RexArvind Web Services" />
@@ -31,6 +31,8 @@
 
 <link href="lib/slb.css" rel="stylesheet" type="text/css" />
 <link href="lib/a11y-dark.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://cdn.plyr.io/3.6.2/plyr.css" />
+
 
 
 <meta property="og:type" content="business" />
@@ -52,7 +54,7 @@
 
 
 <div id="logo-text"><div>
-<a href="#">
+<a href="index.html">
 Lucky Charm Girl <span>Art &amp; Design Studio</span>
 </a>
 </div></div>
@@ -65,8 +67,8 @@ Lucky Charm Girl <span>Art &amp; Design Studio</span>
 <nav id="nav">
 <ul id="list-nav">
 <li><a href="index.html" class="nav-link">Home</a></li>
-<li><a href="#" class="nav-link">Gallery</a></li>
-<li><a href="#" class="nav-link">WhatsApp</a></li>
+<li><a href="gallery.html" class="nav-link">Gallery</a></li>
+<li><a href="https://api.whatsapp.com/send?phone=918181040977&text=Hey%20Arvind" class="nav-link">WhatsApp</a></li>
 </ul>
 </nav>
 </header> <!-- HEADER -->
@@ -77,7 +79,9 @@ Lucky Charm Girl <span>Art &amp; Design Studio</span>
 <div class="col span_6_of_12">
 <h1>Watch Live Demo</h1>
 <p>So many things can be added to a website, here I add what I like. You can also request for features by clicking the button below.
-</p><br>
+</p>
+<span id="typed"></span>
+<br>
 
 <a href="https://api.whatsapp.com/send?phone=918181040977&text=Hey%20Arvind,%20I%20have%20an%20idea%20for%20you" class="btn shake">Request Feature</a>
 <br><br>
@@ -91,7 +95,7 @@ Lucky Charm Girl <span>Art &amp; Design Studio</span>
 
 
 <hr>
-
+  
 
 <div class="section group">
 
@@ -101,41 +105,7 @@ Lucky Charm Girl <span>Art &amp; Design Studio</span>
 
 
 <div class="col span_6_of_12">
-<div class="covid-tracker">
-
-<h3>COVID -19 Cases in <span id="country"></span> <img src="" id="flag"></h3>
-
-<div class="c-card">
-<i class="fa fa-tachometer"></i>
- <span id="active"></span>
-<h4>Active Cases</h4></div>
-
-<div class="c-card">
-<i class="fa fa-th-list"></i>
- <span id="cases"></span>
-<h4>Total Cases</h4></div>
-
-<div class="c-card">
-<i class="fa fa-times-circle"></i>
- <span id="critical"></span>
-<h4>Critical Cases</h4></div>
-
-<div class="c-card">
-<i class="fa fa-times"></i>
- <span id="death"></span>
-<h4>Total Deaths</h4></div>
-
-<div class="c-card">
-<i class="fa fa-check-square-o"></i>
- <span id="recovered"></span>
-<h4>Recovered Cases</h4></div>
-
-<div class="c-card">
-<i class="fa fa-eye"></i>
- <span id="tests"></span>
-<h4>Total Tests Done</h4></div>
-
-</div> <!-- COVID-TRACKER -->
+<canvas id="myLine"></canvas><br>
 </div>
 
 </div>
@@ -146,11 +116,15 @@ Lucky Charm Girl <span>Art &amp; Design Studio</span>
 
 <div class="section group">
 <div class="col span_6_of_12">
-
+<video id="player" playsinline data-poster="vid/poster.jpg">
+<source src="vid/video.mp4" type="video/mp4" />
+</video>
 </div>
 
 <div class="col span_6_of_12">
-
+  <div class="yt-div">
+<iframe class="yt-iframe" src="https://www.youtube.com/embed/Q8M3K578oyM" allowfullscreen></iframe>
+  </div>
 </div>
 </div>
 
@@ -163,6 +137,39 @@ Lucky Charm Girl <span>Art &amp; Design Studio</span>
     <div class="slides"><div id="img">
 <img src="https://dummyimage.com/hd720/FED7D7" alt="">
     </div></div>
+</div>
+
+<div class="col span_6_of_12 siema2">
+
+<div><img src="https://dummyimage.com/hd720/FF6384/fff" alt="lucky charm girl studio">
+</div>
+
+<div><img src="https://dummyimage.com/hd720/36A2EB/fff" alt="lucky charm girl studio">
+</div>
+
+<div><img src="https://dummyimage.com/hd720/FFCE56/fff" alt="lucky charm girl studio">
+</div>
+
+<div><img src="https://dummyimage.com/hd720/4BC0C0/fff" alt="lucky charm girl studio">
+</div>
+
+<div><img src="https://dummyimage.com/hd720/9966FF/fff" alt="lucky charm girl studio">
+</div>
+
+<div><img src="https://dummyimage.com/hd720/FF9F40/fff" alt="lucky charm girl studio">
+</div>
+
+
+
+</div>
+</div
+
+
+<hr>
+
+<div class="section group">
+<div class="col span_6_of_12">
+  
 </div>
 
 <div class="col span_6_of_12">
@@ -225,7 +232,11 @@ CORS, aka Cross-Origin Resource Sharing, is a mechanism that enables many resour
 </div>
 </div>
 
+
+
 <hr>
+
+
 
 
 <div class="section group">
@@ -247,11 +258,47 @@ CORS, aka Cross-Origin Resource Sharing, is a mechanism that enables many resour
 </div>
 
 <div class="col span_6_of_12">
-    <div id="map"></div>
+  
+<div class="covid-tracker">
+
+<h3>COVID -19 Cases in <span id="country"></span> <img src="" id="flag"></h3>
+
+<div class="c-card">
+<i class="fa fa-tachometer"></i>
+ <span id="active"></span>
+<h4>Active Cases</h4></div>
+
+<div class="c-card">
+<i class="fa fa-th-list"></i>
+ <span id="cases"></span>
+<h4>Total Cases</h4></div>
+
+<div class="c-card">
+<i class="fa fa-times-circle"></i>
+ <span id="critical"></span>
+<h4>Critical Cases</h4></div>
+
+<div class="c-card">
+<i class="fa fa-times"></i>
+ <span id="death"></span>
+<h4>Total Deaths</h4></div>
+
+<div class="c-card">
+<i class="fa fa-check-square-o"></i>
+ <span id="recovered"></span>
+<h4>Recovered Cases</h4></div>
+
+<div class="c-card">
+<i class="fa fa-eye"></i>
+ <span id="tests"></span>
+<h4>Total Tests Done</h4></div>
+
+</div> <!-- COVID-TRACKER -->
 </div>
 </div>
 
 
+<br><br><br><br>
 
 
 </div> <!-- WRAPPER -->
@@ -266,10 +313,11 @@ Copyright <span id="footer-year"></span> &copy; Lucky Charm Girl<br>
 <script src="lib/siema.js"></script>
 <script src="lib/highlight.pack.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+<script src="https://cdn.plyr.io/3.6.2/plyr.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 
-<script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPX6HSBF2KHk2zFvcleRn-AfpCukHPj6c&callback=initMap">
-</script>
+
+
       
 
 
