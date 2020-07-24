@@ -15,7 +15,7 @@ new SimpleLightbox({elements: '.preview-gallery-tiles a'})
 
 function getStarted(){
 SimpleLightbox.open({
-content:'<div class="slb-box"><img src="img/lucky-charm-girl-hero-image.webp" alt="lucky charm girl hero image"><h3>Here&apos;s what you can do</h3><ul><li>First of all relax</li><li>Then breath</li></ul></div>',
+content:'<div class="slb-box"><img src="img/lucky-charm-girl-hero-image.webp" alt="lucky charm girl"><h3>First of all, send a photo like this to someone special. Then contact me back.</h3></div>',
 elementClass: 'slbContentEl'})
 }
 

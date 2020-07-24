@@ -73,6 +73,8 @@ hr {display:block; height:1px; border:0;
 padding:0; margin:2rem 0;
 border-top:1px solid #cccccc}
 
+i::before{vertical-align:-4%}
+
 img {border-style:none;max-width:100%}
 
 ol li, ul li{margin-left:2.4rem}
@@ -397,9 +399,19 @@ font-size:2rem; margin-top:0.5rem}
 
 /* ===== CONTACT ===== */
 
-.contact p span{display:block;font-weight:bold}
+.indent{padding-left:2.5rem;
+padding-bottom:1rem}
 
-.contact .indent{margin-left:1rem}
+.s-media{margin-top:1rem;
+margin-bottom:4rem}
+.s-media a{text-decoration:none;
+font-size:4rem;padding:1rem}
+.s-media a i::before{color:var(--btn-bg)}
+.s-media a:hover i::before{
+color:var(--link-text)}
+
+
+
 
 input[type="text"], input[type="email"], input[type="password"], textarea{
 box-sizing:border-box; outline:0;
