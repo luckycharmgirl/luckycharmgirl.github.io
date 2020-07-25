@@ -138,37 +138,6 @@ font-size:1.5rem}
 #logo-text a{color:var(--header-text);
 text-decoration:none}
 
-/*
-
-#header ul{float: right; list-style:none;}
-
-#header ul li{float: left; position :relative;
-height: 55px;}
-
-#header ul li a {display: block; font-size:1.6rem;
-padding:1.6rem;text-decoration:none}
-
-#header ul li a:hover{
-transition:0.5s}
-
-#header ul li ul{position: absolute;top:55px;
-padding-left:0;
-right:0; display: none; background: #1A202C}
-
-#header ul li:hover ul{display: block
-}
-
-#header ul li ul li{width:100%}
-
-#header ul li ul li a{
-}
-
-#header ul li ul li a:hover{background:#111}
-
-
-
-*/
-
 #nav {float:right}
 #list-nav {list-style:none;float:left}
 #list-nav li {display:inline;margin:0}
@@ -233,7 +202,9 @@ display: none}
 .t-center {text-align:center}
 
 
-.slb-box{padding:0.5rem; max-width:800px
+.slb-box{padding:0.5rem;max-width:800px;
+background:#111; color:#fff;
+border:1px dotted #aaa
 
 }
 
