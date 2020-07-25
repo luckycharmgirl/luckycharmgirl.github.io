@@ -67,17 +67,6 @@ accordionItemBody.style.maxHeight = accordionItemBody.scrollHeight + "px"
 })
 
 
-/* Slideshow with opacity */
-
-var images=['FEFCBF', 'C3DAFE', 'FED7D7'];
-var imgs=document.getElementById('img');
-var x = 0;
-setInterval(slider, 3000);
-function slider(){if(x<images.length){x=x+1;}
-else{x=1;}
-imgs.innerHTML="<img src=https://dummyimage.com/hd720/" + images[x - 1] + ">";}
-
-
 
 
 
