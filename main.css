@@ -298,12 +298,9 @@ backface-visibility: hidden}
 background:#fff; border-radius:4px;
  padding:1rem;margin-bottom:1rem}
 
-.services-card img{width:25%;
-max-height:100%;
-display: block;
-border:1px solid rgba(0,0,0,0.1);
-float: left;}
-.services-card p{display: inline}
+.services-card img{width:29%}
+.services-card p{
+}
 
 
 /* ===== PREVIEW-GALLERY ===== */
